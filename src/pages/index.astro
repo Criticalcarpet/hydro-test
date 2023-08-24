@@ -1,3 +1,26 @@
 ---
-
+import Base from '../layouts/Base.astro'
 ---
+<Base title="Hydro Headlines">
+    <script src="../js/index.js"></script>
+
+
+    <svg viewBox="0 0 285 285">
+        <!-- Symbol-->
+        <symbol id="s-text">
+          <text text-anchor="middle" x="50%" y="50%" dy=".35em">Hydro</text>
+        </symbol>
+        <!-- Duplicate symbols-->
+        <use class="text" xlink:href="#s-text"></use>
+        <use class="text" xlink:href="#s-text"></use>
+        <use class="text" xlink:href="#s-text"></use>
+        <use class="text" xlink:href="#s-text"></use>
+        <use class="text" xlink:href="#s-text"></use>
+      </svg>
+      <div class="container">
+        <div class="content">
+          <canvas id="universe"></canvas>
+          </div>
+        </div>
+      </div>
+</Base>
